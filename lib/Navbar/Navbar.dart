@@ -91,7 +91,7 @@ class DesktopNavbar extends StatelessWidget {
                   );
                 },
                 child: const Text(
-                  "Get Started",
+                  "LOGIN",
                   style: TextStyle(color: Colors.white),
                 ),
               )
@@ -112,7 +112,7 @@ class MobileNavbar extends StatelessWidget {
       padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 40),
       child: Column(children: <Widget>[
         const Text(
-          "RetroPortal Studio",
+          "AQUA NET",
           style: TextStyle(
               fontWeight: FontWeight.bold, color: Colors.white, fontSize: 30),
         ),

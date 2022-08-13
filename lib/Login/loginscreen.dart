@@ -1,4 +1,6 @@
-// ignore_for_file: unnecessary_import, unnecessary_const, sized_box_for_whitespac, prefer_const_constructors
+// ignore_for_file: unnecessary_import, unnecessary_const, sized_box_for_whitespac, prefer_const_constructors, avoid_web_libraries_in_flutter
+
+import 'dart:js';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
@@ -184,7 +186,7 @@ class Body extends StatelessWidget {
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => const MyHomePage()),
+                MaterialPageRoute(builder: (context) => LoginPage()),
               );
             },
             style: ElevatedButton.styleFrom(
