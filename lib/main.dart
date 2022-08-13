@@ -29,11 +29,10 @@ class MyHomePage extends StatelessWidget {
         ),
         child: SingleChildScrollView(
           child: Column(
-            children: <Widget>[
+            children: const <Widget>[
               Navbar(),
               Padding(
-                padding:
-                    const EdgeInsets.symmetric(vertical: 200, horizontal: 50),
+                padding: EdgeInsets.symmetric(vertical: 200, horizontal: 50),
                 child: LandingPage(),
               )
             ],

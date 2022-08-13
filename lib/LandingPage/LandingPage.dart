@@ -1,22 +1,25 @@
+// ignore: file_names
 import 'package:flutter/material.dart';
 
 class LandingPage extends StatelessWidget {
+  const LandingPage({Key? key}) : super(key: key);
+
   List<Widget> pageChildren(width) {
     return <Widget>[
-      Container(
+      SizedBox(
         width: width,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            Text(
+            const Text(
               "TITLE /n TITLE",
               style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 40.0,
                   color: Colors.white),
             ),
-            Padding(
-              padding: const EdgeInsets.symmetric(vertical: 20.0),
+            const Padding(
+              padding: EdgeInsets.symmetric(vertical: 20.0),
               child: Text(
                 "TEXT",
                 style: TextStyle(fontSize: 16.0, color: Colors.white),
@@ -24,12 +27,11 @@ class LandingPage extends StatelessWidget {
             ),
             MaterialButton(
               color: Colors.white,
-              shape: RoundedRectangleBorder(
+              shape: const RoundedRectangleBorder(
                   borderRadius: BorderRadius.all(Radius.circular(20.0))),
               onPressed: () {},
-              child: Padding(
-                padding: const EdgeInsets.symmetric(
-                    vertical: 20.0, horizontal: 40.0),
+              child: const Padding(
+                padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 40.0),
                 child: Text(
                   "Take A Look",
                   style: TextStyle(
@@ -44,7 +46,7 @@ class LandingPage extends StatelessWidget {
       Padding(
         padding: const EdgeInsets.symmetric(vertical: 100.0),
         child: Image.asset(
-          "assets/images/lp_image.png",
+          "assets/images/front.png",
           width: 100,
         ),
       )
