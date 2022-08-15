@@ -87,7 +87,7 @@ class DesktopNavbar extends StatelessWidget {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => LoginPage()),
+                    MaterialPageRoute(builder: (context) => const LoginPage()),
                   );
                 },
                 child: const Text(
@@ -163,6 +163,7 @@ class MobileNavbar extends StatelessWidget {
               SizedBox(
                 width: 30,
               ),
+              
             ],
           ),
         )

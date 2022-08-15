@@ -1,12 +1,13 @@
+// ignore_for_file: unnecessary_import, unnecessary_const, sized_box_for_whitespac, prefer_const_constructors, avoid_web_libraries_in_flutter, sized_box_for_whitespace, sort_child_properties_last, unnecessary_string_interpolations, unnecessary_new
 // ignore_for_file: unnecessary_import, unnecessary_const, sized_box_for_whitespac, prefer_const_constructors, avoid_web_libraries_in_flutter
-
-import 'dart:js';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:test/main.dart';
 
-class LoginPage extends StatelessWidget {
+class LoginPage extends StatefulWidget {
+  const LoginPage({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,6 +30,12 @@ class LoginPage extends StatelessWidget {
             ],
           ),
         ));
+  }
+
+  @override
+  State<StatefulWidget> createState() {
+    // TODO: implement createState
+    throw UnimplementedError();
   }
 }
 
@@ -115,14 +122,14 @@ class Body extends StatelessWidget {
               vertical: MediaQuery.of(context).size.height / 6),
           child: SizedBox(
             width: 320,
-            child: _formLogin(),
+            child: _formLogin(context),
           ),
         )
       ],
     );
   }
 
-  Widget _formLogin() {
+  Widget _formLogin(context) {
     return Column(
       children: [
         TextField(

@@ -12,7 +12,7 @@ class LandingPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             const Text(
-              "TITLE /n TITLE",
+              "TITLE /nTITLE",
               style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 40.0,
