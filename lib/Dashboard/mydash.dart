@@ -159,7 +159,10 @@ class _MyDashPageState extends State<MyDashPage>
             SizedBox(
               height: 100,
               child: Padding(
-                padding: EdgeInsets.all(10),
+                padding: padding: EdgeInsets.symmetric(
+                  horizontal: MediaQuery.of(context).size.width,
+                  vertical: MediaQuery.of(context).size.height,
+                ),
                 child: Row(
                   // mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
