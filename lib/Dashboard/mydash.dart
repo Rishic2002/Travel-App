@@ -129,7 +129,7 @@ class _MyDashPageState extends State<MyDashPage>
                       children: <Widget>[
                         Row(
                           children: [
-                            Container(
+                            SizedBox(
                                 width: 50,
                                 height: 50,
                                 child: LiquidCircularProgressIndicator(
@@ -142,7 +142,6 @@ class _MyDashPageState extends State<MyDashPage>
                                   borderWidth: 5.0,
                                   direction: Axis
                                       .horizontal, // The direction the liquid moves (Axis.vertical = bottom to top, Axis.horizontal = left to right). Defaults to Axis.vertical.
-                                  center: Text("Loading..."),
                                 )),
                           ],
                         ),

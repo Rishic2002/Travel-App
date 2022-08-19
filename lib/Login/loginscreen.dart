@@ -1,13 +1,8 @@
-// ignore_for_file: unnecessary_import, unnecessary_const, sized_box_for_whitespac, prefer_const_constructors, avoid_web_libraries_in_flutter, sized_box_for_whitespace, sort_child_properties_last, unnecessary_string_interpolations, unnecessary_new
-// ignore_for_file: unnecessary_import, unnecessary_const, sized_box_for_whitespac, prefer_const_constructors, avoid_web_libraries_in_flutter
+// ignore_for_file: use_key_in_widget_constructors, no_logic_in_create_state
 
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
-import 'package:test/main.dart';
 
-class LoginPage extends StatefulWidget {
-  const LoginPage({Key? key}) : super(key: key);
-
+class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,48 +17,15 @@ class LoginPage extends StatefulWidget {
           child: ListView(
             padding: EdgeInsets.symmetric(
                 horizontal: MediaQuery.of(context).size.width / 8),
-            children: [
-              // MediaQuery.of(context).size.width >= 980
-              //     ? Menu()
-              //     : SizedBox(), // Responsive
-              Body()
-            ],
+            children: const [Body()],
           ),
         ));
   }
-
-  @override
-  State<StatefulWidget> createState() {
-    // TODO: implement createState
-    throw UnimplementedError();
-  }
-}
-
-Widget _registerButton() {
-  return Container(
-    padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 8),
-    decoration: BoxDecoration(
-      color: Colors.white,
-      borderRadius: BorderRadius.circular(15),
-      boxShadow: const [
-        BoxShadow(
-          color: Colors.grey,
-          spreadRadius: 10,
-          blurRadius: 12,
-        ),
-      ],
-    ),
-    child: const Text(
-      'Register',
-      style: TextStyle(
-        fontWeight: FontWeight.bold,
-        color: Colors.black54,
-      ),
-    ),
-  );
 }
 
 class Body extends StatelessWidget {
+  const Body({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -110,13 +72,6 @@ class Body extends StatelessWidget {
             ],
           ),
         ),
-
-        // MediaQuery.of(context).size.width >= 1300 //Responsive
-        //     ? Image.asset(
-        //         'images/illustration-1.png',
-        //         width: 300,
-        //       )
-        //     : SizedBox(),
         Padding(
           padding: EdgeInsets.symmetric(
               vertical: MediaQuery.of(context).size.height / 6),
@@ -189,12 +144,9 @@ class Body extends StatelessWidget {
             child: SizedBox(
                 width: double.infinity,
                 height: 50,
-                child: const Center(child: const Text("Sign In"))),
+                child: Center(child: Text("Sign In"))),
             onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => LoginPage()),
-              );
+              Navigator.of(context).pushNamed("/dash");
             },
             style: ElevatedButton.styleFrom(
               primary: Colors.blue,

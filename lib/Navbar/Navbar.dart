@@ -1,6 +1,7 @@
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
+
 import 'package:test/Login/loginscreen.dart';
 
 class Navbar extends StatelessWidget {
@@ -85,10 +86,7 @@ class DesktopNavbar extends StatelessWidget {
                 shape: const RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(20.0))),
                 onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => const LoginPage()),
-                  );
+                  Navigator.of(context).pushNamed("/login");
                 },
                 child: const Text(
                   "LOGIN",
@@ -163,7 +161,6 @@ class MobileNavbar extends StatelessWidget {
               SizedBox(
                 width: 30,
               ),
-              
             ],
           ),
         )
