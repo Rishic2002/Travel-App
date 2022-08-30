@@ -53,16 +53,17 @@ class _MyDashPageState extends State<MyDashPage>
                 height: 10,
               ),
               Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                //text and value
+                mainAxisAlignment: MainAxisAlignment.start,
+                //text and valu
                 children: <Widget>[
-                  Text("$string Filled ($value %)", style: const TextStyle()),
+                  Text("$string FILLED($value%)", style: const TextStyle()),
                 ],
               ),
               const SizedBox(
                 height: 10,
               ),
-              Row(
+              Expanded(
+                  child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   Row(
@@ -88,7 +89,7 @@ class _MyDashPageState extends State<MyDashPage>
                     ],
                   )
                 ],
-              )
+              ))
             ],
           )),
     );
@@ -129,7 +130,7 @@ class _MyDashPageState extends State<MyDashPage>
                       children: <Widget>[
                         Row(
                           children: [
-                            SizedBox(
+                            Container(
                                 width: 50,
                                 height: 50,
                                 child: LiquidCircularProgressIndicator(
@@ -142,6 +143,7 @@ class _MyDashPageState extends State<MyDashPage>
                                   borderWidth: 5.0,
                                   direction: Axis
                                       .horizontal, // The direction the liquid moves (Axis.vertical = bottom to top, Axis.horizontal = left to right). Defaults to Axis.vertical.
+                                  center: Text("Loading..."),
                                 )),
                           ],
                         ),
@@ -159,22 +161,16 @@ class _MyDashPageState extends State<MyDashPage>
             SizedBox(
               height: 100,
               child: Padding(
-                padding: padding: EdgeInsets.symmetric(
-                  horizontal: MediaQuery.of(context).size.width,
-                  vertical: MediaQuery.of(context).size.height,
-                ),
+                padding: EdgeInsets.all(5),
                 child: Row(
                   // mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
                     Text(
                       "WaterGy Dashboard",
                       style: TextStyle(
-                        fontSize: 35,
+                        fontSize: 20,
                         fontWeight: FontWeight.bold,
                       ),
-                    ),
-                    SizedBox(
-                      width: 900,
                     ),
                     ElevatedButton(
                       onPressed: () {},
@@ -289,35 +285,31 @@ class _MyDashPageState extends State<MyDashPage>
             Expanded(child: LayoutBuilder(
               builder: (context, constraints) {
                 return Expanded(
-                    child: GridView.count(
-                        mainAxisSpacing: 10,
-                        crossAxisSpacing: 10,
-                        crossAxisCount: 4,
-                        childAspectRatio: 2.5,
-                        padding: EdgeInsets.all(8),
+                    child: GridView.extent(
+                        maxCrossAxisExtent: 200.0,
+                        crossAxisSpacing: 20.0,
+                        mainAxisSpacing: 20.0,
                         children: <Widget>[
-                      CardStyle1("Water Tank 1A", 35),
-                      CardStyle1("Water Tank 1B", 42),
-                      CardStyle1("Water Tank 2A", 20),
-                      CardStyle1("Water Tank 2B", 25),
-                      CardStyle1("Water Tank 3A", 58),
-                      CardStyle1("Water Tank 3B", 72),
-                      CardStyle1("Water Tank 4A", 89),
-                      CardStyle1("Water Tank 4B", 23),
-                      CardStyle1("Water Tank 5A", 10),
-                      CardStyle1("Water Tank 5B", 10),
-                      CardStyle1("Water Tank 6A", 74),
-                      CardStyle1("Water Tank 6B", 30),
-                      CardStyle1("Water Tank 7A", 41),
-                      CardStyle1("Water Tank 7B", 5),
-                      CardStyle1("Water Tank 8A", 31),
-                      CardStyle1("Water Tank 8B", 65),
-                      CardStyle1("Water Tank 9A", 86),
-                      CardStyle1("Water Tank 9B", 52),
+                      CardStyle1("Tank 1A", 35),
+                      CardStyle1("Tank 1B", 42),
+                      CardStyle1("Tank 2A", 20),
+                      CardStyle1("Tank 2B", 25),
+                      CardStyle1("Tank 3A", 58),
+                      CardStyle1("Tank 3B", 72),
+                      CardStyle1("Tank 4A", 89),
+                      CardStyle1("Tank 4B", 23),
+                      CardStyle1("Tank 5A", 10),
+                      CardStyle1("Tank 5B", 10),
+                      CardStyle1("Tank 6A", 74),
+                      CardStyle1("Tank 6B", 30),
+                      CardStyle1("Tank 7A", 41),
+                      CardStyle1("Tank 7B", 5),
+                      CardStyle1("Tank 8A", 31),
+                      CardStyle1("Tank 8B", 65),
+                      CardStyle1("Tank 9A", 86),
+                      CardStyle1("Tank 9B", 52),
                       // CardStyle1("Water Tank 10A", 12),
                       // CardStyle1("Water Tank 10B", 100),
-                      CardStyle2("Block A", 2364),
-                      CardStyle2("Block B", 1250)
                     ]));
               },
             ))
