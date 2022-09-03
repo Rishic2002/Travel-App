@@ -39,6 +39,7 @@ dependencies:
   google_fonts: ^3.0.1
   sticky_headers: "^0.3.0"
   resize: ^1.0.0
+  responsive_builder: ^0.4.2
 
 dev_dependencies:
   flutter_test:

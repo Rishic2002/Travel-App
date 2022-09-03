@@ -1,0 +1,4 @@
+#Tue Aug 30 13:44:41 IST 2022
+base.0=/Users/rishic2002/Desktop/Apps/test/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

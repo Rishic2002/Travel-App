@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 
-import 'package:test/Login/loginscreen.dart';
+import 'package:test/Login/login.dart';
 
 class Navbar extends StatelessWidget {
   const Navbar({Key? key}) : super(key: key);
@@ -44,47 +44,45 @@ class DesktopNavbar extends StatelessWidget {
                 style: TextStyle(color: Colors.black),
               ),
               const SizedBox(
-                width: 30,
+                width: 20,
               ),
               const Text(
                 "TWO",
                 style: TextStyle(color: Colors.black),
               ),
               const SizedBox(
-                width: 30,
+                width: 20,
               ),
               const Text(
                 "THREE",
                 style: TextStyle(color: Colors.black),
               ),
               const SizedBox(
-                width: 30,
+                width: 20,
               ),
               const Text(
                 "FOUR",
                 style: TextStyle(color: Colors.black),
               ),
               const SizedBox(
-                width: 30,
+                width: 20,
               ),
               const Text(
                 "FIVE",
                 style: TextStyle(color: Colors.black),
               ),
               const SizedBox(
-                width: 30,
+                width: 20,
               ),
               const Text(
                 "SIX",
                 style: TextStyle(color: Colors.black),
               ),
               const SizedBox(
-                width: 30,
+                width: 20,
               ),
               MaterialButton(
                 color: const Color.fromARGB(255, 30, 233, 216),
-                shape: const RoundedRectangleBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(20.0))),
                 onPressed: () {
                   Navigator.of(context).pushNamed("/login");
                 },
@@ -112,55 +110,65 @@ class MobileNavbar extends StatelessWidget {
         const Text(
           "AQUA NET",
           style: TextStyle(
-              fontWeight: FontWeight.bold, color: Colors.white, fontSize: 30),
+              fontWeight: FontWeight.bold, color: Colors.black, fontSize: 30),
         ),
         Padding(
           padding: const EdgeInsets.all(12.0),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: const <Widget>[
-              Text(
+            children: <Widget>[
+              const Text(
                 "ONE",
                 style: TextStyle(color: Colors.black),
               ),
-              SizedBox(
-                width: 30,
+              const SizedBox(
+                width: 20,
               ),
-              Text(
+              const Text(
                 "TWO",
                 style: TextStyle(color: Colors.black),
               ),
-              SizedBox(
-                width: 30,
+              const SizedBox(
+                width: 20,
               ),
-              Text(
+              const Text(
                 "THREE",
                 style: TextStyle(color: Colors.black),
               ),
-              SizedBox(
-                width: 30,
+              const SizedBox(
+                width: 20,
               ),
-              Text(
+              const Text(
                 "FOUR",
                 style: TextStyle(color: Colors.black),
               ),
-              SizedBox(
-                width: 30,
+              const SizedBox(
+                width: 20,
               ),
-              Text(
+              const Text(
                 "FIVE",
                 style: TextStyle(color: Colors.black),
               ),
-              SizedBox(
-                width: 30,
+              const SizedBox(
+                width: 20,
               ),
-              Text(
+              const Text(
                 "SIX",
                 style: TextStyle(color: Colors.black),
               ),
-              SizedBox(
-                width: 30,
+              const SizedBox(
+                width: 20,
               ),
+              MaterialButton(
+                color: const Color.fromARGB(255, 30, 233, 216),
+                onPressed: () {
+                  Navigator.of(context).pushNamed("/login");
+                },
+                child: const Text(
+                  "LOGIN",
+                  style: TextStyle(color: Colors.white),
+                ),
+              )
             ],
           ),
         )

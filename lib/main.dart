@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:test/Dashboard/mydash.dart';
-import 'package:test/Login/loginscreen.dart';
+import 'package:test/Login/login.dart';
 import 'LandingPage/LandingPage.dart';
 import '/Navbar/Navbar.dart';
 import 'Dashboard/mydash.dart';
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(primarySwatch: Colors.blue, fontFamily: "Montserrat"),
       home: MyHomePage(),
       routes: <String, WidgetBuilder>{
-        "/login": (BuildContext context) => LoginScreen(),
+        "/login": (BuildContext context) => Login(),
         "/dash": (BuildContext context) => const MyDashPage(),
       },
     );
