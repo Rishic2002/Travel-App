@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:test/Dashboard/mydash.dart';
 import 'package:test/Login/login.dart';
+import 'package:test/Login/register.dart';
 import 'LandingPage/LandingPage.dart';
 import '/Navbar/Navbar.dart';
 import 'Dashboard/mydash.dart';
@@ -17,6 +18,7 @@ class MyApp extends StatelessWidget {
       routes: <String, WidgetBuilder>{
         "/login": (BuildContext context) => Login(),
         "/dash": (BuildContext context) => const MyDashPage(),
+        "/regis": (BuildContext context) => Register(),
       },
     );
   }

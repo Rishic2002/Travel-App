@@ -156,7 +156,9 @@ class _MyDashPageState extends State<MyDashPage>
     return Resize(builder: () {
       return Scaffold(
         backgroundColor: Color.fromARGB(100, 246, 246, 246),
-        body: Column(
+        body: 
+        Column(
+          
           children: <Widget>[
             SizedBox(
               height: 100,
@@ -187,101 +189,6 @@ class _MyDashPageState extends State<MyDashPage>
                 ),
               ),
             ),
-            // StaggeredGrid.count(
-            //   crossAxisCount: 6,
-            //   crossAxisSpacing: 12.0,
-            //   mainAxisSpacing: 12.0,
-            //   children: <Widget>[
-            //     StaggeredGridTile.count(
-            //         crossAxisCellCount: 1,
-            //         mainAxisCellCount: 1,
-            //         child: CardStyle1("Water Tank 1A", 35)),
-            //     StaggeredGridTile.count(
-            //         crossAxisCellCount: 1,
-            //         mainAxisCellCount: 1,
-            //         child: CardStyle1("Water Tank 1B", 42)),
-            //     StaggeredGridTile.count(
-            //         crossAxisCellCount: 1,
-            //         mainAxisCellCount: 1,
-            //         child: CardStyle1("Water Tank 2A", 20)),
-            //     StaggeredGridTile.count(
-            //         crossAxisCellCount: 1,
-            //         mainAxisCellCount: 1,
-            //         child: CardStyle1("Water Tank 2B", 25)),
-            //     StaggeredGridTile.count(
-            //         crossAxisCellCount: 1,
-            //         mainAxisCellCount: 1,
-            //         child: CardStyle1("Water Tank 3A", 58)),
-            //     StaggeredGridTile.count(
-            //         crossAxisCellCount: 1,
-            //         mainAxisCellCount: 1,
-            //         child: CardStyle1("Water Tank 3B", 72)),
-            //     StaggeredGridTile.count(
-            //         crossAxisCellCount: 1,
-            //         mainAxisCellCount: 1,
-            //         child: CardStyle1("Water Tank 4A", 89)),
-            //     StaggeredGridTile.count(
-            //         crossAxisCellCount: 1,
-            //         mainAxisCellCount: 1,
-            //         child: CardStyle1("Water Tank 4B", 23)),
-            //     StaggeredGridTile.count(
-            //         crossAxisCellCount: 1,
-            //         mainAxisCellCount: 1,
-            //         child: CardStyle1("Water Tank 5A", 10)),
-            //     StaggeredGridTile.count(
-            //         crossAxisCellCount: 1,
-            //         mainAxisCellCount: 1,
-            //         child: CardStyle1("Water Tank 5B", 10)),
-            //     StaggeredGridTile.count(
-            //         crossAxisCellCount: 1,
-            //         mainAxisCellCount: 1,
-            //         child: CardStyle1("Water Tank 6A", 74)),
-            //     StaggeredGridTile.count(
-            //         crossAxisCellCount: 1,
-            //         mainAxisCellCount: 1,
-            //         child: CardStyle1("Water Tank 6B", 30)),
-            //     StaggeredGridTile.count(
-            //         crossAxisCellCount: 1,
-            //         mainAxisCellCount: 1,
-            //         child: CardStyle1("Water Tank 7A", 41)),
-            //     StaggeredGridTile.count(
-            //         crossAxisCellCount: 1,
-            //         mainAxisCellCount: 1,
-            //         child: CardStyle1("Water Tank 7B", 5)),
-            //     StaggeredGridTile.count(
-            //         crossAxisCellCount: 1,
-            //         mainAxisCellCount: 1,
-            //         child: CardStyle1("Water Tank 8A", 31)),
-            //     StaggeredGridTile.count(
-            //         crossAxisCellCount: 1,
-            //         mainAxisCellCount: 1,
-            //         child: CardStyle1("Water Tank 8B", 65)),
-            //     // StaggeredGridTile.count(
-            //     //     crossAxisCellCount: 1,
-            //     //     mainAxisCellCount: 1,
-            //     //     child: CardStyle1("Water Tank 9A", 86)),
-            //     // StaggeredGridTile.count(
-            //     //     crossAxisCellCount: 1,
-            //     //     mainAxisCellCount: 1,
-            //     //     child: CardStyle1("Water Tank 9B", 52)),
-            //     // StaggeredGridTile.count(
-            //     //     crossAxisCellCount: 1,
-            //     //     mainAxisCellCount: 1,
-            //     //     child: CardStyle1("Water Tank 10A", 12)),
-            //     // StaggeredGridTile.count(
-            //     //     crossAxisCellCount: 1,
-            //     //     mainAxisCellCount: 1,
-            //     //     child: CardStyle1("Water Tank 10B", 100)),
-            //     StaggeredGridTile.count(
-            //         crossAxisCellCount: 1,
-            //         mainAxisCellCount: 1,
-            //         child: CardStyle2("Block A", 2364)),
-            //     StaggeredGridTile.count(
-            //         crossAxisCellCount: 1,
-            //         mainAxisCellCount: 1,
-            //         child: CardStyle2("Block B", 1250))
-            //   ],
-            // ),
             Expanded(child: LayoutBuilder(
               builder: (context, constraints) {
                 return Expanded(
@@ -315,6 +222,7 @@ class _MyDashPageState extends State<MyDashPage>
             ))
           ],
         ),
+       
       );
     });
   }

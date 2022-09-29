@@ -1,8 +1,6 @@
-// ignore_for_file: file_names
+// ignore_for_file: file_names, must_be_immutable
 
 import 'package:flutter/material.dart';
-
-import 'package:test/Login/login.dart';
 
 class Navbar extends StatelessWidget {
   const Navbar({Key? key}) : super(key: key);
@@ -25,6 +23,15 @@ class Navbar extends StatelessWidget {
 
 // ignore: use_key_in_widget_constructors
 class DesktopNavbar extends StatelessWidget {
+  List<String> items = [
+    'ONE',
+    'TWO',
+    'THREE',
+    'FOUR',
+    'FIVE',
+  ];
+  String dropdownValue = 'Red';
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -39,56 +46,65 @@ class DesktopNavbar extends StatelessWidget {
           ),
           Row(
             children: <Widget>[
-              const Text(
-                "ONE",
-                style: TextStyle(color: Colors.black),
-              ),
-              const SizedBox(
-                width: 20,
-              ),
-              const Text(
-                "TWO",
-                style: TextStyle(color: Colors.black),
-              ),
-              const SizedBox(
-                width: 20,
-              ),
-              const Text(
-                "THREE",
-                style: TextStyle(color: Colors.black),
-              ),
-              const SizedBox(
-                width: 20,
-              ),
-              const Text(
-                "FOUR",
-                style: TextStyle(color: Colors.black),
-              ),
-              const SizedBox(
-                width: 20,
-              ),
-              const Text(
-                "FIVE",
-                style: TextStyle(color: Colors.black),
-              ),
-              const SizedBox(
-                width: 20,
-              ),
-              const Text(
-                "SIX",
-                style: TextStyle(color: Colors.black),
+              MaterialButton(
+                color: (Colors.white),
+                onPressed: () {
+                  // Navigator.of(context).pushNamed("/login");
+                },
+                child: DropdownButton<String>(
+                  value: dropdownValue,
+                  items: items.map<DropdownMenuItem<String>>((String value) {
+                    return DropdownMenuItem<String>(
+                        value: value, child: Text(value));
+                  }).toList(),
+                  onChanged: (String? newValue) {},
+                ),
               ),
               const SizedBox(
                 width: 20,
               ),
               MaterialButton(
-                color: const Color.fromARGB(255, 30, 233, 216),
+                color: (Colors.white),
+                onPressed: () {
+                  //  Navigator.of(context).pushNamed("/login");
+                },
+                child: DropdownButton<String>(
+                  value: dropdownValue,
+                  items: items.map<DropdownMenuItem<String>>((String value) {
+                    return DropdownMenuItem<String>(
+                        value: value, child: Text(value));
+                  }).toList(),
+                  onChanged: (String? newValue) {},
+                ),
+              ),
+              const SizedBox(
+                width: 20,
+              ),
+              MaterialButton(
+                color: (Colors.white),
+                onPressed: () {
+                  // Navigator.of(context).pushNamed("/login");
+                },
+                child: DropdownButton<String>(
+                  value: dropdownValue,
+                  items: items.map<DropdownMenuItem<String>>((String value) {
+                    return DropdownMenuItem<String>(
+                        value: value, child: Text(value));
+                  }).toList(),
+                  onChanged: (String? newValue) {},
+                ),
+              ),
+              const SizedBox(
+                width: 20,
+              ),
+              MaterialButton(
+                color: (Colors.white),
                 onPressed: () {
                   Navigator.of(context).pushNamed("/login");
                 },
                 child: const Text(
-                  "LOGIN",
-                  style: TextStyle(color: Colors.white),
+                  "SIGN IN >",
+                  style: TextStyle(color: Colors.black),
                 ),
               )
             ],
@@ -165,7 +181,7 @@ class MobileNavbar extends StatelessWidget {
                   Navigator.of(context).pushNamed("/login");
                 },
                 child: const Text(
-                  "LOGIN",
+                  "SIGN IN>",
                   style: TextStyle(color: Colors.white),
                 ),
               )
