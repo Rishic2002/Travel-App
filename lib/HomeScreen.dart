@@ -39,7 +39,7 @@ class _HomeScreenState extends State<HomeScreen> {
         decoration: const BoxDecoration(
           image: DecorationImage(
             image: AssetImage(
-                "/Users/rishic2002/Desktop/DESKTOP/Apps/TestApps/test2/assets/India.jpg"),
+                "/Users/rishic2002/Desktop/DESKTOP/Apps/TestApps/test2/assets/India.jpg"),    //BACKGROUND IMAGE
             fit: BoxFit.fill,
           ),
         ),
@@ -53,7 +53,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 children: const [
                   SizedBox(height: 30),
                   Text(
-                    'INDIA',
+                    'INDIA',                                                              //TEXT AND TITLE
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 50,
@@ -87,7 +87,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ),
                 Container(
-                    height: 400,
+                    height: 400,                                                            //BOTTOM CONTAINERS
                     padding: const EdgeInsets.only(bottom: 30),
                     child: PageView.builder(
                         itemCount: paintings.length,
