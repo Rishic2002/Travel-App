@@ -1,10 +1,12 @@
 List<Map> paintings = [
   {
     'image':
-        '/Users/rishic2002/Desktop/DESKTOP/Apps/TestApps/test2/assets/lucknow.jpeg',
+        '/Users/rishic2002/Desktop/DESKTOP/Apps/TestApps/test2/assets/lucknow.jpeg',              //IMAGE LOCATION
+                                                                                                  //NAME 
+                        
     'name': 'Lucknow',
     'route':
-        'Navigator.push(   context,   MaterialPageRoute(builder: (context) => Lucknow()),   );  '
+        'Navigator.push(   context,   MaterialPageRoute(builder: (context) => Lucknow()),   );  '       // ROUTE HERE DOESN'T WORK
   },
   {
     'image':
