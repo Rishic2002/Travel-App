@@ -98,7 +98,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             child: GestureDetector(
                               onTap: () {
                                 Navigator.of(context).push(MaterialPageRoute(
-                                    builder: (context) => const Lucknow()));
+                                    builder: (context) => const Lucknow()));          //PAGE ROUTE
                               },
 
                               // ignore: prefer_const_constructors
@@ -110,18 +110,18 @@ class _HomeScreenState extends State<HomeScreen> {
                                     ClipRRect(
                                       borderRadius: BorderRadius.circular(15),
                                       child: Image.asset(
-                                        paintings[i]['image'],
+                                        paintings[i]['image'],                            //IMAGE LOOP
                                         height: 370,
                                         fit: BoxFit.fill,
                                         alignment:
-                                            Alignment(-pageOffset.abs() + i, 0),
+                                            Alignment(-pageOffset.abs() + i, 0),        //ALIGNMENT
                                       ),
                                     ),
                                     Positioned(
                                       left: 10,
                                       bottom: 20,
                                       right: 10,
-                                      child: Text(
+                                      child: Text(                                          //IMAGE TEXT LOOP
                                         paintings[i]['name'],
                                         style: const TextStyle(
                                           color: Colors.white,
