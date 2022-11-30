@@ -66,14 +66,14 @@ flutter:
   
   # To add assets to your application, add an assets section, like this:
   assets:
-     - /Users/rishic2002/Desktop/DESKTOP/Apps/TestApps/test2/assets/bg.jpg
-     - /Users/rishic2002/Desktop/DESKTOP/Apps/TestApps/test2/assets/painting2.jpg
-     - /Users/rishic2002/Desktop/DESKTOP/Apps/TestApps/test2/assets/painting3.jpg
-     - /Users/rishic2002/Desktop/DESKTOP/Apps/TestApps/test2/assets/painting4.jpg
-     - /Users/rishic2002/Desktop/DESKTOP/Apps/TestApps/test2/assets/painting5.jpg
-     - /Users/rishic2002/Desktop/DESKTOP/Apps/TestApps/test2/assets/painting6.jpeg
-     - /Users/rishic2002/Desktop/DESKTOP/Apps/TestApps/test2/assets/painting7.jpg
-     - /Users/rishic2002/Desktop/DESKTOP/Apps/TestApps/test2/assets/painting8.jpg
+     - /Users/rishic2002/Desktop/DESKTOP/Apps/test2/assets/chennai.jpg
+     - /Users/rishic2002/Desktop/DESKTOP/Apps/test2/assets/delhi.jpg
+     - /Users/rishic2002/Desktop/DESKTOP/Apps/test2/assets/Hyderabad.jpg
+     - /Users/rishic2002/Desktop/DESKTOP/Apps/test2/assets/india.jpg
+     - /Users/rishic2002/Desktop/DESKTOP/Apps/test2/assets/jaipur.jpg
+     - /Users/rishic2002/Desktop/DESKTOP/Apps/test2/assets/lucknow.jpeg
+     - /Users/rishic2002/Desktop/DESKTOP/Apps/test2/assets/Mumbai.jpg
+
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

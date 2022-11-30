@@ -5,13 +5,11 @@ import 'package:flutter/material.dart';
 import 'package:test2/Data.dart';
 import 'dart:ui';
 
-import 'package:test2/Lucknow.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
   @override
-  // ignore: library_private_types_in_public_api
   _HomeScreenState createState() => _HomeScreenState();
 }
 
@@ -39,8 +37,8 @@ class _HomeScreenState extends State<HomeScreen> {
         decoration: const BoxDecoration(
           image: DecorationImage(
             image: AssetImage(
-                "/Users/rishic2002/Desktop/DESKTOP/Apps/TestApps/test2/assets/India.jpg"),
-            fit: BoxFit.fill,
+                "/Users/rishic2002/Desktop/DESKTOP/Apps/test2/assets/india.jpg"),
+            fit: BoxFit.fitHeight,
           ),
         ),
         child: Column(
@@ -92,19 +90,21 @@ class _HomeScreenState extends State<HomeScreen> {
                     child: PageView.builder(
                         itemCount: paintings.length,
                         controller: pageController,
+                         scrollDirection: Axis.horizontal
+                    ,
                         itemBuilder: (context, i) {
                           return Transform.scale(
                             scale: 1,
                             child: GestureDetector(
                               onTap: () {
                                 Navigator.of(context).push(MaterialPageRoute(
-                                    builder: (context) => const Lucknow()));
+                                    builder: (context) => route[i]));
                               },
 
                               // ignore: prefer_const_constructors
 
                               child: Container(
-                                padding: const EdgeInsets.only(right: 20),
+                                padding: const EdgeInsets.only(right: 20,top: 20),
                                 child: Stack(
                                   children: [
                                     ClipRRect(
@@ -112,6 +112,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                       child: Image.asset(
                                         paintings[i]['image'],
                                         height: 370,
+                                        width: 370,
                                         fit: BoxFit.fill,
                                         alignment:
                                             Alignment(-pageOffset.abs() + i, 0),
