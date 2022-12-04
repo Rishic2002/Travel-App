@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'HomeScreen.dart';
-import 'Cities/pagecontroller.dart';
+import 'HomeScreen/HomeScreen.dart';
+import 'Cities/Controller/pagecontroller.dart';
 
 void main() {
   runApp(const MyApp());
