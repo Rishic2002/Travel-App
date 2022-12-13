@@ -4,6 +4,9 @@ import 'package:flutter/material.dart';
 
 import 'package:test2/HomeScreen/Data.dart';
 import 'dart:ui';
+import 'package:horizontal_card_pager/horizontal_card_pager.dart';
+import 'package:horizontal_card_pager/card_item.dart';
+
 
 
 class HomeScreen extends StatefulWidget {
@@ -19,6 +22,9 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   void initState() {
+
+
+
     super.initState();
     pageController = PageController(viewportFraction: 0.7);
     pageController.addListener(() {
@@ -105,43 +111,13 @@ class _HomeScreenState extends State<HomeScreen> {
 
                               child: Container(
                                 padding: const EdgeInsets.only(right: 20,top: 20),
-                                child: Stack(
-                                  children: [
-                                    ClipRRect(
-                                      borderRadius: BorderRadius.circular(15),
-                                      child: Image.asset(
-                                        india[i]['image'],
-                                        height: 370,
-                                        width: 370,
-                                        fit: BoxFit.fill,
-                                        alignment:
-                                            Alignment(-pageOffset.abs() + i, 0),
-                                      ),
-                                    ),
-                                    Positioned(
-                                      left: 10,
-                                      bottom: 20,
-                                      right: 10,
-                                      child: Text(
-                                        india[i]['name'],
-                                        style: const TextStyle(
-                                          color: Colors.white,
-                                          fontSize: 35,
-                                          fontStyle: FontStyle.italic,
-                                        ),
-                                      ),
-                                    )
-                                  ],
-                                ),
-                              ),
-                            ),
-                          );
-                        }))
-              ],
-            ),
-          ],
-        ),
-      ),
-    ));
-  }
-}
+                                      child: HorizontalCardPager(
+        onPageChanged: (page) => print("page : $page"),
+        onSelectedItem: (page) => print("selected : $page"),
+        items: items,
+
+        
+                 ))));}))])]))));}}
+List<ImageCarditem> items = [
+      
+    ];

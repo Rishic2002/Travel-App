@@ -1,6 +1,7 @@
 // ignore_for_file: library_private_types_in_public_api
 
 import 'package:flutter/material.dart';
+import 'package:test2/Cities/Mumbai/data.dart';
 import 'package:test2/HomeScreen/Data.dart';
 
 import '../../HomeScreen/HomeScreen.dart';
@@ -31,6 +32,16 @@ class _MumbaiState extends State<Mumbai> {
 Widget build(BuildContext context) {
    return MaterialApp(
         home: Scaffold(
+          appBar: AppBar(
+        backgroundColor: Colors.transparent,
+  leading: IconButton(
+      onPressed: (){
+        Navigator.pop(context);
+      },
+      icon:Icon(Icons.arrow_back_ios), 
+      //replace with our own icon data.
+  )
+),
       body: Container(
         width: MediaQuery.of(context).size.width,
         decoration: const BoxDecoration(
@@ -86,7 +97,7 @@ Widget build(BuildContext context) {
                     height: 400,
                     padding: const EdgeInsets.only(bottom: 30),
                     child: PageView.builder(
-                        itemCount: india.length,
+                        itemCount: mumbai.length,
                         controller: pageController,
                          scrollDirection: Axis.horizontal
                     ,
@@ -96,7 +107,7 @@ Widget build(BuildContext context) {
                             child: GestureDetector(
                               onTap: () {
                                 Navigator.of(context).push(MaterialPageRoute(
-                                    builder: (context) => route[i]));
+                                    builder: (context) => mumbairoute[i]));
                               },
 
                               // ignore: prefer_const_constructors
@@ -108,7 +119,7 @@ Widget build(BuildContext context) {
                                     ClipRRect(
                                       borderRadius: BorderRadius.circular(15),
                                       child: Image.asset(
-                                        india[i]['image'],
+                                        mumbai[i]['image'],
                                         height: 370,
                                         width: 370,
                                         fit: BoxFit.fill,
@@ -121,7 +132,7 @@ Widget build(BuildContext context) {
                                       bottom: 20,
                                       right: 10,
                                       child: Text(
-                                        india[i]['name'],
+                                        mumbai[i]['name'],
                                         style: const TextStyle(
                                           color: Colors.white,
                                           fontSize: 35,

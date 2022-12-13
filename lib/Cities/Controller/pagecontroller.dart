@@ -17,34 +17,23 @@ class PageControl extends StatelessWidget {
   Widget build(BuildContext context) {
     final PageController controller = PageController();
     return PageView(
+      
       pageSnapping: true,
       scrollDirection: Axis.vertical,
       controller: controller,
       children: const <Widget>[
-        Center(
-          child: HomeScreen(),
-        ),
-        Center(
-          child: Delhi(),
-        ),
-        Center(
-          child: Lucknow(),
-        ),
-        Center(
-          child: Chennai(),
-        ),
-        Center(
-          child:Hyderabad(),
-        ),
-        Center(
-          child:Kolkata(),
-        ),
-         Center(
-          child:Mumbai(),
-        ),
-         Center(
-          child:Jaipur(),
-        ),
+        Hero(tag: 1, child: HomeScreen()),
+         Hero(tag: 2, child: Delhi()),
+          Hero(tag: 3, child: Lucknow()),
+           Hero(tag: 4, child: Chennai()),
+            Hero(tag: 5, child: Hyderabad()),
+             Hero(tag: 5, child: Kolkata()),
+              Hero(tag: 5, child:  Mumbai()),
+              Hero(tag: 5, child:  Jaipur()),
+
+
+        
+       
       ],
     );
   }
