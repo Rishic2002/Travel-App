@@ -41,8 +41,10 @@ dependencies:
   google_fonts: ^3.0.1
   url_launcher: ^6.1.6
   firebase_core: ^2.1.1
-  google_maps_flutter: ^2.2.1
+ 
   horizontal_card_pager: ^1.1.1
+  cached_network_image: ^3.2.3
+  sliding_up_panel: ^2.0.0+1
 
 dev_dependencies:
   flutter_test:
@@ -68,14 +70,15 @@ flutter:
   
   # To add assets to your application, add an assets section, like this:
   assets:
-     - /Users/rishic2002/Desktop/DESKTOP/Apps/test2/lib/HomeScreen/india.jpg
-     - /Users/rishic2002/Desktop/DESKTOP/Apps/test2/lib/Cities/Mumbai/Mumbai.jpg
-     - /Users/rishic2002/Desktop/DESKTOP/Apps/test2/lib/Cities/Lucknow/lucknow.jpeg
-     - /Users/rishic2002/Desktop/DESKTOP/Apps/test2/lib/Cities/Kolkata/kolkata.jpg
-     - /Users/rishic2002/Desktop/DESKTOP/Apps/test2/lib/Cities/Jaipur/jaipur.jpg
-     - /Users/rishic2002/Desktop/DESKTOP/Apps/test2/lib/Cities/Hyderabad/Hyderabad.jpg
-     - /Users/rishic2002/Desktop/DESKTOP/Apps/test2/lib/Cities/Delhi/delhi.jpg
-     - /Users/rishic2002/Desktop/DESKTOP/Apps/test2/lib/Cities/Chennai/chennai.jpg
+     - lib/HomeScreen/india.jpg
+     - lib/Cities/Mumbai/Mumbai.jpg
+     - lib/Cities/Lucknow/lucknow.jpeg
+     - lib/Cities/Kolkata/kolkata.jpg
+     - lib/Cities/Jaipur/jaipur.jpg
+     - lib/Cities/Hyderabad/Hyderabad.jpg
+     - lib/Cities/Delhi/delhi.jpg
+     - lib/Cities/Chennai/chennai.jpg
+     
 
   #   - images/a_dot_ham.jpeg
 

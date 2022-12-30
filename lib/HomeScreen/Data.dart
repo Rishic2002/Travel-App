@@ -14,38 +14,38 @@ import '../Cities/Kolkata/Kolkata.dart';
 List<Map> india = [
     {
     'image':
-        '/Users/rishic2002/Desktop/DESKTOP/Apps/test2/lib/Cities/Delhi/delhi.jpg',
+        'https://images.pexels.com/photos/1007427/pexels-photo-1007427.jpeg?auto=compress&cs=tinysrgb&w=800',
     'name': 'Delhi',
 
   },
   {
     'image':
-        '/Users/rishic2002/Desktop/DESKTOP/Apps/test2/lib/Cities/Lucknow/lucknow.jpeg',
+        'https://images.pexels.com/photos/6501507/pexels-photo-6501507.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     'name': 'Lucknow',
   },
   {
     'image':
-        '/Users/rishic2002/Desktop/DESKTOP/Apps/test2/lib/Cities/Chennai/chennai.jpg',
+        'https://e1.pxfuel.com/desktop-wallpaper/292/438/desktop-wallpaper-chennai-central-station-chennai-city.jpg',
     'name': 'Chennai',
   },
   {
     'image':
-        '/Users/rishic2002/Desktop/DESKTOP/Apps/test2/lib/Cities/Hyderabad/Hyderabad.jpg',
+        'https://images.pexels.com/photos/12092934/pexels-photo-12092934.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     'name': 'Hyderabad',
   },
   {
     'image':
-        '/Users/rishic2002/Desktop/DESKTOP/Apps/test2/lib/Cities/Kolkata/kolkata.jpg',
+        'https://images.unsplash.com/photo-1630494378404-097499a0fea1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
     'name': 'Kolkata',
   },
   {
     'image':
-        '/Users/rishic2002/Desktop/DESKTOP/Apps/test2/lib/Cities/Mumbai/Mumbai.jpg',
+        'https://images.unsplash.com/photo-1614082813462-d763a404cbb7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
     'name': 'Mumbai',
   },
   {
     'image':
-        '/Users/rishic2002/Desktop/DESKTOP/Apps/test2/lib/Cities/Jaipur/jaipur.jpg',
+        'https://images.unsplash.com/photo-1524230507669-5ff97982bb5e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=728&q=80',
     'name': 'Jaipur',
   },
 
