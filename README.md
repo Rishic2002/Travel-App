@@ -4,7 +4,6 @@
 
 ## Getting Started
 
-Application based on Google Maps Platform .The app is currently in planning state ,
-The overall idea would be a person would be able to plan everything that is necessary during a trip to either domestic/abroad .The app is also linked with many other applications like uber/Ola ,Makemytrip/trivago etc for booking and he/she is also able to add other details for the trip and make a full plan of the trip.Using Firebase CRUD and RestAPIs in the application.
+Application based on Flutter and Firebase The overall idea would be a person would be able to plan everything that is necessary during a trip to either domestic/abroad .App features include things like a guide to a place/region and a search form to allow users to find flights or hotels, a booking form to allow users to make reservations, and a payment gateway to process payments. Connected the application to Firebase to fetch data and perform actions such as booking a flight ,hotels ,buses etc
 
 
