@@ -1,24 +1,20 @@
-// ignore_for_file: unused_import
-
 import 'package:flutter/material.dart';
-
-import 'HomeScreen/HomeScreen.dart';
-import 'Cities/Controller/pagecontroller.dart';
+import 'package:travel_app/screens/home_screen.dart';
+import 'package:travel_app/screens/selected_screen.dart';
 
 void main() {
-  
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      darkTheme: ThemeData(
+        brightness: Brightness.dark,
+      ),
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(fontFamily: 'timesBold'),
-      home: const PageControl(),
+      home: HomeScreen(),
     );
   }
 }

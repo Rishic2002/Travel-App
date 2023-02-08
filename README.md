@@ -1,9 +1,16 @@
-# Travel-App
+# travel_app
 
-
+A new Flutter project.
 
 ## Getting Started
 
-Application based on Flutter and Firebase The overall idea would be a person would be able to plan everything that is necessary during a trip to either domestic/abroad .App features include things like a guide to a place/region and a search form to allow users to find flights or hotels, a booking form to allow users to make reservations, and a payment gateway to process payments. Connected the application to Firebase to fetch data and perform actions such as booking a flight ,hotels ,buses etc
+This project is a starting point for a Flutter application.
 
+A few resources to get you started if this is your first Flutter project:
 
+- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+
+For help getting started with Flutter, view our
+[online documentation](https://flutter.dev/docs), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
