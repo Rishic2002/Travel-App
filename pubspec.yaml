@@ -23,8 +23,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  smooth_page_indicator: ^0.2.3
-  tab_indicator_styler: ^1.0.0
+  smooth_page_indicator: ^1.0.1
+  tab_indicator_styler: ^2.0.0
   flutter_svg:
   google_fonts:
   cached_network_image:
