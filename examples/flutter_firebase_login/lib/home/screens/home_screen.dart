@@ -1,6 +1,7 @@
 import 'dart:ui';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_firebase_login/AI/chat_screen.dart';
 import 'package:flutter_firebase_login/home/models/popular_model.dart';
 import 'package:flutter_firebase_login/home/screens/selected_screen.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
@@ -36,7 +37,9 @@ class _HomeScreenState extends State<HomeScreen> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
                       GestureDetector(
-                        onTap: () {},
+                        onTap: () {
+
+                        },
                         child: Container(
                           height: 57.6,
                           width: 57.6,
@@ -53,7 +56,10 @@ class _HomeScreenState extends State<HomeScreen> {
                         ),
                       ),
                       GestureDetector(
-                        onTap: () {},
+                        onTap: () {
+                          Navigator.of(context).push(MaterialPageRoute(
+                                  builder: (context) => ChatScreen()));
+                        },
                         child: Container(
                           height: 57.6,
                           width: 57.6,
@@ -63,7 +69,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             color: Color(0x080a0928),
                           ),
                           child: Icon(
-                            Icons.menu,
+                            Icons.attractions_outlined,
                             color: Color(0xFF676E79),
                           ),
                           // child: SvgPicture.asset('assets/svg/icon_search.svg '),
